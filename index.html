@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>𝕾𝖕𝖔𝖔𝖋𝖞 | 𝕳𝖔𝖒𝖊</title>
+  </head>
+  <body>
+    <div class= "titulo">
+     
+      <span style="--l: '✩⇜';">✩⇜</span>
+      <span style="--l: 'S';">S</span>
+      <span style="--l: 'P';">P</span>
+      <span style="--l: 'O';">O</span> 
+      <span style="--l: 'O';">O</span>
+      <span style="--l: 'F';">F</span>
+      <span style="--l: 'Y';">Y</span>
+      <span style="--l: '⇝✩';">⇝✩</span>
+
+    </div>
+    <div class="buscador">
+        
+      🎶<input id="buscar" type="text" placeholder="Busca tú musica"/>
+    </div>
+    <div class="main-container">
+      
+      <div class="main-playing">
+        <div class="cover-container">
+          <img id="cover-image" src="imagenes/finneas.jpg" />
+        </div>
+        <div class="progress-bar">
+          <input id="progress-bar" value="0" type="range" min="0" />
+        </div>
+        <div class="data-song-container">
+          <h1 id="title-song">...</h1>
+          <p id="artist-song">...</p>
+        </div>
+
+        <div class="controls-container">
+          <button id="prev-btn">🡸</button>
+          <button id="play-btn">▶</button>
+          <button id="next-btn">🡺</button>
+        </div>
+        <div class="volume">
+          <span class="control mdi mdi-volume-high">🔊</span>
+          <input type="range" name="volume" id="volume-control" min="0" max="1" step="0.01">
+      </div>
+      </div>
+      <div class="list-song-container" id="list-song-container"></div>
+      
+    </div>
+    <audio id="audio-playing" src="MÚSICA/FINNEAS - Let's Fall in Love for the Night (Official Video) (BUENTEMA.CC).mp3"></audio>
+   
+
+   
+
+    
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>

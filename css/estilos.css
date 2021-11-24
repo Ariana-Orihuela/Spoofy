@@ -1,0 +1,159 @@
+.titulo{
+  min-height: 25vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background:-webkit-radial-gradient(#000000, #1f1b1b) ;
+}
+.titulo span{
+  font-size: 68pt;
+  font-weight: bold;
+  position:relative;
+  font-family:"fantasy";
+  cursor: pointer;
+  transition:all 300ms ease-in-out;
+}
+.titulo span::before{
+  content: var(--l);
+  position: absolute;
+  transform: scale(1.1);
+  filter: blur(15px);
+}
+.titulo span::after{
+  content: var(--l);
+  position: absolute;
+  top:80%;
+  left:0%;
+  filter: blur(30px);
+  transform: rotateX(50deg);
+}
+.titulo span:hover{
+filter: contrast(250%)
+}
+.titulo span:nth-child(1){
+  color:#5e69bd ;
+}
+.titulo span:nth-child(2){
+  color: #da1bca;
+}
+.titulo span:nth-child(3){
+  color:rgb(189, 255, 233) ;
+}
+.titulo span:nth-child(4){
+  color: #e47c5d ;
+}
+.titulo span:nth-child(5){
+  color:#fec8D8;
+}
+.titulo span:nth-child(6){
+  color: #ece473;
+}
+.titulo span:nth-child(7){
+  color: #ee7373;
+}
+.titulo span:nth-child(8){
+  color: #d3eda0;
+}
+body {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .main-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #2a2a2ad0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(https://64.media.tumblr.com/58ec441b0b186f6908cf1bbe9104cd97/tumblr_p8y32nNl5q1qzcdp3o1_540.gifv);
+    background-size: cover;
+    background-position: center;
+  }
+  .buscador{
+    
+    background:-webkit-radial-gradient(#000000, #1f1b1b);
+    display: flex;
+    padding:10px ;
+    
+  }
+  .main-playing,
+  .list-song-container {
+    width: 35rem;
+    height: 35rem;
+    background-color: #b36fad54;
+  }
+  .volume{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(161, 229, 238, 0.364);
+}
+.volume.input{
+    cursor: pointer;
+}
+  
+  .main-playing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .cover-container {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+    
+  }
+  
+
+  
+   
+  .data-song-container {
+    
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    align-items: center;
+  }
+  .cover-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-duration: 4s;
+  }
+  
+  .list-item {
+    background-color: #571e57af;
+    display: flex;
+    margin-bottom: 1em;
+    color: aliceblue;
+  }
+  
+  .list-item img {
+    width: 7rem;
+    height: 6rem;
+  }
+  .progress-bar {
+    width: 70%;
+  }
+  .progress-bar input {
+    width: 100%;
+    cursor: pointer;
+  }
+ 
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
